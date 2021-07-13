@@ -1,0 +1,226 @@
+/* 
+    google fonts
+ -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* --------------------
+   universal styles
+ --------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*-------------------- 
+    common-style
+------------------- */
+body {
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+    
+}
+main {
+    display: grid;
+    justify-content: center;
+}
+.container {
+    background-color: white;
+    width: 870px;
+    margin-top: 36px ;
+    padding: 33px 33px 42px 33px;
+    border-radius: 10px;
+}
+/*----------------------------
+    navigation styles 
+-----------------------*/
+.navbar {
+    display: flex;
+    height: 94px;
+    justify-content: center;
+    background-color: #562EFF;
+    align-items: center;
+}
+.nav-section {
+    display: flex;
+    width: 870px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-section a {
+    text-decoration: none;
+    color: white;
+    margin-right: 36px;
+}
+.navbar .nav-section .nav-brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+}
+#logo{
+    width: 40px;
+    height: 51px;
+    margin-right: 16px;
+}
+.navbar .nav-section .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+/*--------------------
+   top player styles
+ -------------------- */
+.top-players {
+    margin-bottom: 30px;
+}
+.section-title {
+    color: #562EFF ;
+    font-size: 24px;
+    margin: 33px 0 33px 0;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    
+}
+.player {
+    display: flex;
+    align-items: center;
+}
+.player img {
+    height: 56px;
+    width: 56px;
+}
+.player h3 {
+    margin-left: 16px;
+}
+hr {
+   border: 1px solid #D1D1D1;
+   margin-bottom: 30px;
+}
+
+/* --------------------
+    top blogs styles 
+ --------------------*/
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog {
+    display: flex;
+    align-items: center;
+}
+.thumbnail img {
+    height: 117px;
+    width: 177px;
+}
+.blog h3 {
+    font-size: 20px;
+    margin-left: 16px;
+}
+.blog p {
+    color: #9F9F9F;
+    margin-left: 16px;
+}
+.blog .author {
+    color: #562EFF;
+    text-decoration: none;
+}
+/* --------------------
+ courses detail stlyes
+ -------------------- */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course {
+    background-color: #FFFFFF;
+    height: 270px;
+    width: 252px;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.048) 0px 10px 15px -3px, rgba(0, 0, 0, 0.021) 0px 4px 6px -2px;
+
+}
+
+.course-thumbnail img {
+    height: 104px;
+    width: 224px;
+    margin-bottom: 20px;
+}
+.course-author {
+    color: #ED6B4F;
+    font-size: 14px;
+}
+.course p {
+    margin-top: 6px;
+}
+.rattings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+.fa-star.filled {
+    color: #FFC014;
+}
+.fa-star.empty {
+    color: #AEAEAE;
+}
+.fa-clock {
+    margin-right: 5px;
+}
+.rattings .rate {
+    color: #A2A2A2;
+}
+.rattings .duration {
+    color: #FF4A60;
+    background-color: #FEE5DF;
+    height: 30px;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+/*--------------------
+   for margin bottom 
+ -------------------- */
+.bottom-margin {
+    margin-bottom: 30px;
+}
+
+/* --------------------
+  responsive queries
+ -------------------- */
+
+ /* --------------------
+    mobile devices 
+--------------------*/
+ @media only screen and (max-width: 688px) {
+     .container {
+         width: 100%;
+     }
+     .navbar {
+         display: none;
+     }
+ }
+ /* Tab Devices */
+
+ @media only screen and (max-width: 1024px) {
+     .container {
+         width: 100%;
+     }
+     .navbar {
+         display: none;
+     }
+     .players {
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
