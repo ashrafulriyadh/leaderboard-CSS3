@@ -207,8 +207,8 @@ hr {
      .container {
          width: 100%;
      }
-     .navbar {
-         display: none;
+     .top-players {
+         width: 100%;
      }
  }
  /* Tab Devices */
@@ -216,9 +216,6 @@ hr {
  @media only screen and (max-width: 1024px) {
      .container {
          width: 100%;
-     }
-     .navbar {
-         display: none;
      }
      .players {
          grid-template-columns: repeat(1, 1fr);
